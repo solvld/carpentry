@@ -1,9 +1,72 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
 }
 
 body{
   background-color: gainsboro;
 }
+header{
+  background: #ffff;
+}
+
+.container{
+  padding: 0 100px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.nav_bar{
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu{
+  list-style: none;
+  display: flex;
+}
+
+.menu_li{
+  margin-left: 38px;
+}
+
+.menu_link{
+  text-decoration: none;
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.logo{
+  text-decoration: none;
+  color: #5E8D7C;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+
+.header_prev{
+  background-image: url(https://images.unsplash.com/photo-1620388639854-6e23776162f0?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1280&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NTIzNjQxNw&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1920);
+  background-size: cover;
+  background-position: 0 30%;
+  height: 80vh;
+
+}
+
+.header_title{
+  font-size: 65px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #81502C;
+  position: absolute;
+  top: 400px
+}
+
