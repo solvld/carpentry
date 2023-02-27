@@ -193,8 +193,52 @@ footer{
     display: block;
   }
 
+  .menu.menu-show{
+    top:0;
+  }
+
+  body.no-scroll{
+    overflow: hidden;
+  }
+
   .menu{
-   display: none;
+    top: -100vh;
+    align-items: center;
+    position: absolute;
+    padding-top: 100px;
+    z-index: 50;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background: #EFEFEF;
+    transition: top 0.7s;
+  }
+
+
+  .burger-menu {
+    width: 20px;
+    height: 14px;
+    cursor: pointer;
+    position: absolute;
+    right: 40px;
+    z-index: 100; /*добавили, чтобы иконка бургер-меню была на одном уровне с меню*/
+  }
+
+  .burger-menu-close span:first-child {
+    transform: rotate(45deg); /*повернули на 45 градусов*/
+    top: 6px; 
+  }
+  .burger-menu-close span:nth-child(2) {
+    opacity: 0; /*скрыли среднюю полоску*/
+  }
+  .burger-menu-close span:last-child {
+    transform: rotate(-45deg); /*повернули на 45 градусов*/
+    top: 6px;
+  }
+
+  .menu_li{
+    margin-top: 20px;
+    text-align: center;
   }
 
   .header_title {
