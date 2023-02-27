@@ -138,6 +138,10 @@ header{
   line-height: 27px;
 }
 
+.card_img{
+  height: 100%;
+}
+
 footer{
   height: 15vh;
   background-color: #ffffff
