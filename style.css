@@ -122,6 +122,7 @@ header{
   flex-direction: column;
   justify-content: space-around;
   width: 30%;
+  height: 30%;
 }
 
 .card_title {
@@ -139,7 +140,7 @@ header{
 }
 
 .card_img{
-  height: 100%;
+  max-height: 220px;
 }
 
 footer{
