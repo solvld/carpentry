@@ -44,6 +44,11 @@ header{
   text-transform: uppercase;
   font-size: 24px;
   font-weight: 300;
+
+  transform: translateX(-40%);
+	transition-property: border-bottom;
+	transition-duration: 100ms;
+  transition-timing-function: linear;  
 }
 
 .logo{
@@ -87,28 +92,26 @@ header{
 }
 
 .title{
-  padding-top: 50px;
+  padding: 50px 0;
   text-align: center;
   font-size: 36px;
   text-transform: uppercase;
 }
 
 .content{
-  padding: 50px 0;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .content_img{
-  width: 600px;
+  width: 42vw;
 }
 
 .content_text{
   font-size: 20px;
   font-weight: 300;
-  width: 600px;
+  width: 40vw;
 }
 
 
@@ -118,7 +121,7 @@ header{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 48vh;
+  width: 30%;
 }
 
 .card_title {
@@ -129,7 +132,7 @@ header{
 
 .card_text {
   padding-top: 30px;
-  width: 325px;
+  width: 100%;
   font-weight: 300;
   font-size: 18px;
   line-height: 27px;
@@ -160,11 +163,12 @@ footer{
   right: 40px;
 }
 .burger-menu span {
-  background: #000000;
-  height: 2px;
+  background: #5E8D7C;
+  height: 3px;
   position: absolute;
   width: 100%;
   left: 0;
+  border-radius: 2px;
 }
 .burger-menu span:first-child {
   top: 0;
@@ -183,25 +187,68 @@ footer{
   .burger-menu{
     display: block;
   }
+
   .menu{
-    display: none;
+   display: none;
   }
 
   .header_title {
-    font-size: 36px;
-    width: 175px;
-    text-align: center;
     position: relative;
     top: 31vh;
-    justify-self: center;
+    padding: 50px 10px;
+    text-align: center;
+    font-size: 36px;
+    text-transform: uppercase
   }
 
   .nav_bar{
     justify-content: center;
   }
+
+  .content{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+
+  .about{
+    height: 100%;
+  }
+
+  .blog{
+    height: 100%;
+  }
+
+  .works{
+    height: 100%;
+  }
+
+  .title{
+    padding: 24px;
+  }
+
+  .container{
+    padding: 0 24px;
+  }
+
+  .content_img{
+    width: 100%;
+  }
+
+  .content_text{
+    padding-top: 16px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .card{
+    margin-bottom: 30px;
+    width: 100%;
+  }
   
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) and (max-width: 1200px) {
 
   .burger-menu{
     display: block;
@@ -210,24 +257,53 @@ footer{
     display: none;
   }
 
-  .header_title {
+  .content{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
 
+  .about{
+    height: 100%;
+  }
+
+  .blog{
+    height: 100%;
+  }
+
+  .works{
+    height: 100%;
+  }
+
+  .container{
+    padding: 0 34px;
+  }
+
+  .content_img{
+    width: 100%;
+  }
+
+  .content_text{
+    padding-top: 30px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .card{
+    margin-bottom: 30px;
+    width: 32%;
+  }
+
+  .blog .content{
+    flex-direction: row;
   }
   
-  .c2 {
-    width: 50%;
-  }
-  
-  .c1 {
-    width: 25%;
-  }
 }
 
-@media screen and (min-width: 1200px) {
-  .burger-menu{
-    display: none;
-  }
-  .menu{
-    display: flex;
-  }
+
+
+.menu_link:hover{
+	border-bottom: #5E8D7C solid;
 }
+
